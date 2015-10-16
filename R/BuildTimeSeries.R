@@ -138,6 +138,7 @@ BuildTimeSeries <- function (dta, idField, varList_pre, startYear, endYear, colY
     
     }
   
+    print("---------------")
     print(varList_pre)
 
     timer <- proc.time() - timer
@@ -175,8 +176,6 @@ BuildTimeSeries <- function (dta, idField, varList_pre, startYear, endYear, colY
         # print(names(dta@data))
 
         tDF <- dta@data[grepl(grepStrYrs, names(dta@data))]
-        print(tDF)
-        print("test")
         meltList[[i]] <- melt(tDF, id=idField)
         
         print("bts3.2")
