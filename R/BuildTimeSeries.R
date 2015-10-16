@@ -176,6 +176,7 @@ BuildTimeSeries <- function (dta, idField, varList_pre, startYear, endYear, colY
 
         tDF <- dta@data[grepl(grepStrYrs, names(dta@data))]
         print(tDF)
+        print("test")
         meltList[[i]] <- melt(tDF, id=idField)
         
         print("bts3.2")
