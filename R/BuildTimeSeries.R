@@ -5,7 +5,7 @@ BuildTimeSeries <- function (dta, idField, varList_pre, startYear, endYear, colY
 
 
 
-    print("bts1")
+    print("bts1a")
 
     # If there is a "colYears" variable, convert to binaries.
     # Eventually could be extended to more than one column.
